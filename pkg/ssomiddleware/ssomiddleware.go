@@ -25,7 +25,9 @@ type ssoContextKey string
 // authenticationKey is the key used to find and retrieve the authentication information from the context
 const authenticationKey = ssoContextKey("authentication")
 
-// New creates a new EasySSO Middleware without logging (except in case of failure of the New function)
+// NewWithDetailedLogs creates a new EasySSO Middleware with detailed logs. As the logs can be quite verbose,
+// it is recommended to only use this function for debugging/development purpose. The public key
+// is given as the file name having the key stored in a PEM format.
 func New(publicKeyFileName string) (*easySSONegroniMiddleware, error) {
 	return newMiddleware(publicKeyFileName, false)
 }
