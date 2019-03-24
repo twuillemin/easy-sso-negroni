@@ -8,13 +8,13 @@ import (
 	"os"
 	"time"
 
-	"bitbucket.org/twuillemin/easy-sso-common/pkg/common"
-	"bitbucket.org/twuillemin/easy-sso-negroni/pkg/ssomiddleware"
 	"github.com/dgrijalva/jwt-go"
+	"github.com/twuillemin/easy-sso-common/pkg/common"
+	"github.com/twuillemin/easy-sso-negroni/pkg/ssomiddleware"
 	"github.com/urfave/negroni"
 )
 
-const basePath string = "C:\\Users\\thwui\\go\\src\\bitbucket.org\\twuillemin\\easy-sso-negroni\\examples\\fullchain"
+const basePath string = "C:\\Users\\thwui\\go\\src\\github.com\\twuillemin\\easy-sso-negroni\\examples\\fullchain"
 
 func main() {
 

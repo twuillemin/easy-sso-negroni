@@ -9,7 +9,7 @@ import (
 	"log"
 	"net/http"
 
-	"bitbucket.org/twuillemin/easy-sso-common/pkg/common"
+	"github.com/twuillemin/easy-sso-common/pkg/common"
 )
 
 // Middleware is a struct that has a ServeHTTP method
